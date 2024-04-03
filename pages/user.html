@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://kit.fontawesome.com/3c840652bc.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="/css/dashboard.css">
+    <title>Job Poster Dashboard</title>
+</head>
+<body>
+    <div class="body-container">
+        <section id="sidebar">
+            <div class="sidebar-description">
+                <i class="fa-solid fa-user"></i>
+                <p>User: <br> <span style="font-style: italic;">Job seeker</span> </p>
+            </div>
+            <div id="sidebar-nav">
+                <ul>
+                    <li class="tab-menu active" onclick="openmenu('home')"><a href="#"><i class="fa fa-dashboard"></i> Dashboard</a></li>
+                    <li class="tab-menu" onclick="openmenu('applications')"><a href="#"><i class="fa fa-desktop"></i>Applications</a></li>
+                    <li class="tab-menu" onclick="openmenu('tools')"><a href="#"><i class="fa fa-sitemap"></i> Documents</a></li >
+                    <li class="tab-menu" onclick="openmenu('calendar')"><a href="#"><i class="fa fa-calendar"></i> Calendar</a></li>
+                </ul>
+            </div>
+        </section>
+        <section id="content">
+            <div id="header">
+                <div class="header-nav">
+                    <div class="menu-button"><!--<i class="fa fa-navicon"></i>--></div>
+                    <div class="nav">
+                        <ul>
+                            <li class="nav-settings">
+                                <div class="font-icon"><i class="fa fa-tasks"></i></div>
+                            </li>
+                            <li class="nav-mail">
+                                <div class="font-icon">
+                                    <i class="fa fa-envelope-o"></i>
+                                </div>
+                            </li>
+                            <li class="nav-calendar">
+                                <div class="font-icon">
+                                    <i class="fa fa-calendar"></i>
+                                </div>
+                            </li>
+                            <li class="nav-chat">
+                                <div class="font-icon">
+                                    <i class="fa fa-comments-o"></i>
+                                </div>
+                            </li>
+                            <li class="nav-profile">
+                                <div class="nav-profile-image">
+                                    <img src="/images/elvin.jpeg" alt="">
+                                    <div class="nav-profile-name">
+                                        Elvin Mgeni<i class="fa fa-caret-down"></i>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="content">
+                <div class="main-content main-default" id="home"></div>
+                <div class="main-content" id="applications"></div>
+                <div class="main-content" id="documents"></div>
+                <div class="main-content" id="calendar"></div>
+            </div>
+        </section>
+    </div>
+<script src="/js/user.js"></script>
+</body>
+</html>
